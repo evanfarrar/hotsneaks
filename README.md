@@ -3,6 +3,16 @@ Hot Sneaks
 
 A 2D graphics and UI coffeescript library.
 
+Examples
+====
+<code><pre>
+  hotsneaks ->
+    image "http://i.imgur.com/CbMq1.png"
+    ellipse 'center-x': 10, 'center-y': 20, 'radius-x': 30, 'radius-y': 40
+    title "Now this is programming!*"
+    fineprint "*it's totally not magic"
+</pre></code>
+
 License
 -------
 
