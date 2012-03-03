@@ -15,6 +15,9 @@ _hotsneaks = {
   ellipse: ((options) ->
     _hotsneaks._paper.ellipse(options['center-x'], options['center-y'], options['radius-x'], options['radius-y'])
   ),
+  image: ((url) ->
+    _hotsneaks._paper.image(url, 0, 0, 400, 400)
+  ),
  #bake: ((callback) ->
  #  callback.call(this);
  #),
