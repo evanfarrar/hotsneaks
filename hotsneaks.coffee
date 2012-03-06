@@ -18,6 +18,9 @@ _hotsneaks = {
   image: ((url) ->
     _hotsneaks._paper.image(url, 0, 0, 400, 400)
   ),
+  text: ((string, options) ->
+    _hotsneaks._paper.text(options['left'], options['top'], string)
+  )
  #bake: ((callback) ->
  #  callback.call(this);
  #),

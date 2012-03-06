@@ -15,3 +15,11 @@ describe "hotsneaks", () ->
       expect(ellipse.attr('cy')).toEqual('20')
       expect(ellipse.attr('rx')).toEqual('30')
       expect(ellipse.attr('ry')).toEqual('40')
+  describe "text", () ->
+    it "should make some text", () ->
+      window.hotsneaks () ->
+        text "I like potatoes", top: 20, left: 30
+      text = $('svg text')
+      expect(text.text()).toEqual("I like potatoes")
+      expect(text.attr('y')).toEqual('20')
+      expect(text.attr('x')).toEqual('30')
